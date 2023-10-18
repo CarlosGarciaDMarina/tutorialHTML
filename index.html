@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8f7ada"> <!--Sirve para poner un color en la barra de direcciones-->
+    <title>Portfolio</title>
+
+    <link rel="shortcut icon" href="img/Ichinose_Asuna_Bunny_girl.png" type="image/x-icon"><!--Sirve para poner una imagen en la pestaña de tu pagina-->
+    <meta name="description" content="Portfolio de Carlos Programador Web y 
+    Multimediay, además, Tecnico superior en Administracion de Sistemas en Redes"> <!--Sirve para poner una descripcion cuando te buscan en google-->
+    <link rel="alternate" href="https://carlos.dev/en" hreflang="en-GB"> <!--Sirve para decirle al navegador que esta pagina tiene traduccion a ingles de Reino Unido, IMPORTANTE-->
+    <link rel="canonical" href="https://carlos.dev"> <!--Sirve para indicar la pagina principal de nuestro sitio, IMPORTANTE-->
+
+
+    <!-- OPEN GRAPH (Búscalo en Google) -->
+    <meta property="og:tittle" content="Portfolio de un técnico superior en desarrollo de 
+    apps multimedia y ASIR">    
+    <meta property="og:image" content="img/Ichinose_Asuna_Bunny_girl.png">
+    <meta property="og:image:alt" content="Asuna Ichinose version bunny">
+
+
+</head>
+<body>
+    <!-- aqui se ponen los comentarios-->
+    <header>
+        <h1>Portfolio de Carlos</h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a 
+            href="https://www.youtube.com/@HimemoriLuna" 
+            target="_blank"
+            rel="noreferrer"> <!-- Importantisimo para mayor seguridad evita inviar tu informacion -->
+            Mi canal de youtube favorito
+            </a>
+        </nav>
+    </header>
+
+    <dialog id="modal">
+        <h1>¿Sabías que puedes abrir un modal así?</h1>
+        <p>Y es nativo</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Abrir modal</button>
+
+    <script>
+        window.show.addEventListener('click', () => {
+            window.modal.showModal()
+        });
+        window.hide.addEventListener('click', () => {
+            window.modal.close()
+        });
+    </script>
+
+    <video controls src="https://www.youtube.com/
+    watch?v=M0Oud1_4sl0&ab_channel=LunaCh.%E5%A7%AB%E6%A3%AE%E3%83%AB%E3%83%BC%E3%83%8A"></video>
+
+    <video autoplay mutted loop src="https://www.youtube.com/
+    watch?v=M0Oud1_4sl0&ab_channel=LunaCh.%E5%A7%AB%E6%A3%AE%E3%83%AB%E3%83%BC%E3%83%8A"></video>
+
+    <audio controls src="https://www.youtube.com/
+    watch?v=M0Oud1_4sl0&ab_channel=LunaCh.%E5%A7%AB%E6%A3%AE%E3%83%AB%E3%83%BC%E3%83%8A"></audio>
+    <main>
+    <p><strong> Programador Web y Multimedia</strong> Junior y, además, 
+        Tecnico superior en Administracion de Sistemas en Redes </p>
+    <h2 id="#experiencia">Experiencia: </h2>
+    <ul>
+        <li class="list-item">
+            Oscar Banzo - Actual
+        </li>
+        <li class="list-item">
+            Grupo Linka - 2019
+        </li>
+    </ul>
+    <header>
+        <h3>Imagen de Asuna</h3>
+    </header>
+
+    <a  download href="img/Ichinose_Asuna_Bunny_girl.png">
+        <img 
+        id="asuna"
+        src="img/Ichinose_Asuna_Bunny_girl.png" 
+        title="Asunabunny" 
+        alt="Foto de asuna version bunny mirando a camara"
+        height="700"
+        >
+    </a>
+
+    <br>
+    <input type="datetime-local">
+
+    <!--Etiquetas para utilizar la semántica correctamente-->
+    <!--
+    <aside>
+        representa una sección de una página que consiste en contenido que está indirectamente 
+        relacionado con el contenido principal del documento. Estas secciones son a menudo 
+        representadas como barras laterales o como inserciones y contienen una explicación al 
+        margen como una definición de glosario. ALGO SEPARADO DEL CONTENIDO PRINCIPAL
+        No utilices este elemento para etiquetar texto entre paréntesis, 
+        ya que este tipo de texto se considera parte del flujo principal.
+    </aside>
+
+    <article>
+        representa una composición auto-contenida en un documento, una página, una aplicación 
+        o en un sitio, que se quiere que sea distribuíble y/o reutilizable de MANERA INDEPENDIENTE,
+        por ejemplo, en la redifusión. Puede tener header, footer, p, small (se utiliza para dar algo 
+        de informacion adicional sobre algo puntual).
+    </article>
+
+    <main>
+        Esta etiqueta deberia englobar el contenido principal de nuestra pag, solo puede haber 1
+    </main>
+
+    Las etiquetas <div> y <span> hay que intentar reservarlas para usarlas con css, osea, para 
+    dar estilos. Intentar utilizar el elemento role para darles un rol, por ejemplo:
+    <div role="button">
+        Haz click aquí
+    </div>
+    
+
+    -->
+
+    <article>
+        <header>
+            <h3 id="#tecnologias">Mis tecnologias favoritas</h3>
+        </header>
+        <ol reversed start="10">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+        </ol>
+    </article>
+
+    <section>
+        <!-- 
+            Esto hace que cargue la imagen mas adelante por si tienes mala conexion 
+            No utilizar el loading lazy en las imagenes que se vean al principio por motivos obvios
+        -->
+        <img 
+         height="700" 
+         loading="lazy" 
+         src="img/Karin_Bunny_Girl.png" 
+         alt="Imagen de Karen en version bunny sosteniendo una bandeja">
+    </section>
+
+    <section>
+        <iframe 
+         width="560" 
+         height="315" 
+         src="https://www.youtube.com/embed/3nYLTiY5skU?si=A5hJERcrzp1ATT0W" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen>
+        </iframe>
+    </section>
+
+    <section>
+        <header>
+            <h2>Preguntas frecuentes</h2>
+        </header>
+            <details>
+                <summary>¿Dónde has estudiado?</summary>
+                <p>Estudié en el Instituto de Formacion Profesional de Madrid IFP</p>
+            </details>
+            <details>
+                <summary>¿Cuales son tus hobbies?</summary>
+                <p>Me encanta entrenar, leer e investigar</p>
+            </details>
+            <details>
+                <summary>¿Cuál es tu lenguaje favorito?</summary>
+                <p>Mi lenguaje favorito es Python</p>
+            </details>
+    </section>
+
+    <section>
+        <header>
+            <h2>Formulario de contacto</h2>
+        </header>
+
+        <form method="post" action="/">
+            <fieldset> <!--Agrupacion de los diferentes input que va a tener-->
+                <legend>Informacion personal</legend>
+
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Carlos" required>
+
+                <div>
+                    <label>Apellidos: 
+                        <input type="text" name="apellidos" placeholder="García de Marina">
+                    </label>
+                </div>                
+            </fieldset>
+            <fieldset> <!--Agrupacion de los diferentes input que va a tener-->
+                <legend>Informacion adicional</legend>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="carlos@carlos.com" required>
+                <div>
+                    <label for="telefono">telefono: 
+                        <input type="tel" id="telefono" name="telefono" placeholder="123 456 789" pattern="[0-9]{9}">
+                    </label>
+                </div>
+                <div>
+                    <label for="why">¿Por qué quieres contactar?</label>
+                    <select name="why" id="why">
+                        <option value="1">Trabajo</option>
+                        <option value="2">Duda</option>
+                        <option value="3">Más información</option>
+                    </select>
+                </div>
+                <div>
+                    <datalist id="languages">
+                        <option value="Javascript"></option>
+                        <option value="Java"></option>
+                        <option value="Python"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <label id="languages">
+                        ¿Con qué lenguajes quieres que te ayude?
+                        <input list="languages" name="languages">
+                    </label>
+                </div>
+                <div>
+                    <label for="terms">¿Aceptas los términos?</label>
+                    <input type="checkbox" id="terms" name="termas" required>
+                </div>
+            </fieldset>
+            <!--Los botones que estan dentro de la etiqueta form, por defecto son de tipu submit-->
+            <button>Enviar contacto</button>
+        </form>
+
+    </section>
+
+    <button>
+        Haz click aquí
+    </button>
+
+    </main>
+
+    <footer>
+        Copyright © - El portfolio de Carlos Garcia de Marina Garcia
+        <a href="mailto:carlos@carlos.com"> Envíame un correo</a>
+        <a href="+3469874984043"> Llámame por teléfono</a>
+        <a href="mailto:carlos@carlos.com"> Envíame un correo</a>
+        <a href="whatsapp:://send?Hola Carlos"> Escribeme un whatsapp</a>
+    </footer>
+
+</body>
+</html>
